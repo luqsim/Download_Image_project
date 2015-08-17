@@ -25,6 +25,10 @@ class Downloader(object):
     >    dl.save_file()
     >
 
+    We do not use the urllib.urlretrieve, because we want to handle the
+    sophiscated exceptions and timeouts. urllib2.open_url() also provides
+    more information about the object by returning the HTTPRequest object.
+
     Check status with dl.is_ok:
     0 or >0: all fine
     -1: file exists already locally
@@ -69,6 +73,10 @@ class Downloader(object):
         - open the file
         - handle exceptions
         - get information of the HTTPRequest object
+
+        We do not use the urllib.urlretrieve, because we want to handle the
+        sophiscated exceptions and timeouts. urllib2.open_url() also provides
+        more information about the object by returning the HTTPRequest object.
 
         NOTE: already called in the constructor.
 
