@@ -15,7 +15,7 @@
 *.pydevproject
 .project
 .metadata
-bin/**
+#bin/**
 tmp/**
 tmp/**/*
 *.tmp
@@ -34,3 +34,6 @@ local.properties
 #python specific
 ############################
 *.pyc
+
+
+
